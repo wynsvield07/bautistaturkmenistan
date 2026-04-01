@@ -2,54 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Food</title>
+  <title>Food – Turkmenistan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-green-900">
+<body class="bg-white text-green-900 font-sans">
 
-<nav class="flex justify-between items-center p-5 bg-green-800 text-white">
-  <h1 class="text-2xl font-bold">Turkmenistan</h1>
-  <div class="space-x-5">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="food.html" class="text-green-200">Food</a>
-    <a href="places.html">Places</a>
+<nav class="sticky top-0 z-50 bg-green-800 text-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold tracking-tight hover:text-green-200 transition-colors">Turkmenistan</a>
+    <div class="flex gap-6">
+      <a href="index.html" class="text-sm font-medium hover:text-green-200 transition-colors">Home</a>
+      <a href="about.html" class="text-sm font-medium hover:text-green-200 transition-colors">About</a>
+      <a href="food.html" class="text-sm font-medium text-green-200 border-b-2 border-green-300 pb-0.5">Food</a>
+      <a href="places.html" class="text-sm font-medium hover:text-green-200 transition-colors">Places</a>
+    </div>
   </div>
 </nav>
 
-<section class="p-10 grid md:grid-cols-2 gap-6">
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXj96OpMa5swnVXbZ4414-qJZxUZ1d16CclqEOQUEskFXoxms0AgXpyu-gbkO9tGN8WJSKJ99kNy010yUqSkxc9LyrpDUItDYnm6RA1A&s=10" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Palaw/Plov (Pilaf)</h2>
-      <p>The "king" of dishes, often made with lamb, rice, carrots, and sometimes dried apricots.</p>
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-green-800">Turkmen Cuisine</h1>
+    <p class="text-green-600 mt-2 text-lg">Hearty, flavorful dishes shaped by nomadic traditions</p>
+  </div>
+
+  <!-- Featured dish: large banner -->
+  <div class="grid md:grid-cols-2 gap-0 items-center mb-16 bg-green-50 rounded-3xl overflow-hidden shadow-md">
+    <div class="h-80 overflow-hidden">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXj96OpMa5swnVXbZ4414-qJZxUZ1d16CclqEOQUEskFXoxms0AgXpyu-gbkO9tGN8WJSKJ99kNy010yUqSkxc9LyrpDUItDYnm6RA1A&s=10"
+        class="w-full h-full object-cover" alt="Plov">
+    </div>
+    <div class="p-8">
+      <span class="text-xs font-semibold uppercase tracking-widest text-green-500 bg-green-100 px-3 py-1 rounded-full">Featured Dish</span>
+      <h2 class="text-3xl font-bold text-green-800 mt-3">Plov</h2>
+      <p class="text-green-700 mt-3 leading-relaxed">The national dish of Central Asia — a rich rice pilaf cooked with lamb, carrots, and onions in a large cast-iron kazan. Fragrant and deeply satisfying.</p>
     </div>
   </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://ingmar.app/blog/wp-content/uploads/2015/10/Turkmenistan-Ichlekli.jpg" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Ishlekli (Meat Pie)</h2>
-      <p>A traditional shepherd’s dish made with minced meat and onions between two layers of dough.</p>
+  <!-- Remaining dishes: 4-column grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow">
+      <div class="h-44 overflow-hidden">
+        <img src="https://ingmar.app/blog/wp-content/uploads/2015/10/Turkmenistan-Ichlekli.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Ishlekli">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-green-800">Ishlekli (Meat Pie)</h3>
+        <p class="text-green-600 text-sm mt-1 leading-relaxed">A traditional shepherd’s dish made with minced meat and onions between two layers of dough.</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow">
+      <div class="h-44 overflow-hidden">
+        <img src="https://mrsmahiya.wordpress.com/wp-content/uploads/2012/10/dograma21.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Dograma">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-green-800">Dograma</h3>
+        <p class="text-green-600 text-sm mt-1 leading-relaxed">A savory dish prepared by tearing fresh bread and mixing it with boiled mutton and onions.</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow">
+      <div class="h-44 overflow-hidden">
+        <img src="https://ayan-turkmenistan.travel/wp-content/uploads/2024/02/425956421_17908535915913375_5138003240699296637_n.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Chorek">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-green-800">Chorek</h3>
+        <p class="text-green-600 text-sm mt-1 leading-relaxed">A traditional, crusty flatbread baked in a tamdyr, holding significant cultural value.</p>
+      </div>
+    </div>
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-lg transition-shadow">
+      <div class="h-44 overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-bsazkmc1lmiy4lB6L5I4cE1i2TuJ6is09m0mkV50v90wKmVv_oxhWCciUK4esX9cuFlt2ksV8nswRYTYHbOGYkULK3CuaPzBD2PvhA&s=10"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Shorpa">
+      </div>
+      <div class="p-4">
+        <h3 class="text-lg font-bold text-green-800">Shorpa</h3>
+        <p class="text-green-600 text-sm mt-1 leading-relaxed"> A rich, hearty soup filled with lamb, potatoes, and tomatoes.</p>
+      </div>
     </div>
   </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://mrsmahiya.wordpress.com/wp-content/uploads/2012/10/dograma21.jpg" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Dograma</h2>
-      <p>A savory dish prepared by tearing fresh bread and mixing it with boiled mutton and onions.</p>
-    </div>
+  <!-- Hospitality note -->
+  <div class="mt-16 bg-green-800 text-white rounded-3xl p-8 md:p-12">
+    <h2 class="text-2xl font-bold mb-3">Food & Hospitality</h2>
+    <p class="text-green-100 leading-relaxed max-w-2xl">In Turkmen culture, offering food is an act of deep respect. Guests are always served tea (çay) first, followed by bread. Traditional meals are eaten communally around a dastarkhan — a decorative tablecloth spread on the ground.</p>
   </div>
-
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://ayan-turkmenistan.travel/wp-content/uploads/2024/02/425956421_17908535915913375_5138003240699296637_n.jpg" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Chorek</h2>
-      <p>A traditional, crusty flatbread baked in a tamdyr, holding significant cultural value.</p>
-    </div>
-  </div>
-</section>
+</div>
 
 </body>
 </html>
