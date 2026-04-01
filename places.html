@@ -2,64 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Places</title>
+  <title>Places – Turkmenistan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-green-900">
+<body class="bg-white text-green-900 font-sans">
 
-<!-- NAVBAR -->
-<nav class="flex justify-between items-center p-5 bg-green-800 text-white">
-  <h1 class="text-2xl font-bold">Turkmenistan</h1>
-  <div class="space-x-5">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="food.html">Food</a>
-    <a href="places.html" class="text-green-200">Places</a>
+<nav class="sticky top-0 z-50 bg-green-800 text-white shadow-lg">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold tracking-tight hover:text-green-200 transition-colors">Turkmenistan</a>
+    <div class="flex gap-6">
+      <a href="index.html" class="text-sm font-medium hover:text-green-200 transition-colors">Home</a>
+      <a href="about.html" class="text-sm font-medium hover:text-green-200 transition-colors">About</a>
+      <a href="food.html" class="text-sm font-medium hover:text-green-200 transition-colors">Food</a>
+      <a href="places.html" class="text-sm font-medium text-green-200 border-b-2 border-green-300 pb-0.5">Places</a>
+    </div>
   </div>
 </nav>
 
-<!-- PLACES GRID -->
-<section class="p-10 grid md:grid-cols-2 gap-6">
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepPwHKYUxyrtgQ9QqSH3Cz3JqzGsxL4zdfz5XPvYLfJm7yDTdr4amStYHqBcUqrPTMra24GNECjbnPGBcgRJzGGSvMSkdLR_woOqA18PLVWTW_MBH_ZIiWbSdaT8yEHBJ8Bisw=s680-w680-h510-rw" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Darvaza Gas Crater</h2>
-      <p>A 70-meter wide burning crater in the Karakum Desert that has been flaming since 1971. Best experienced at night when the orange glow contrasts against the dark sky.</p>
+<div class="max-w-6xl mx-auto px-6 py-12">
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-green-800">Places to Visit</h1>
+    <p class="text-green-600 mt-2 text-lg">From ancient ruins to natural wonders</p>
+  </div>
+
+  <!-- Featured: full-width with text overlay -->
+  <div class="relative rounded-3xl overflow-hidden shadow-xl mb-16 h-96">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepPwHKYUxyrtgQ9QqSH3Cz3JqzGsxL4zdfz5XPvYLfJm7yDTdr4amStYHqBcUqrPTMra24GNECjbnPGBcgRJzGGSvMSkdLR_woOqA18PLVWTW_MBH_ZIiWbSdaT8yEHBJ8Bisw=s680-w680-h510-rw"
+      class="w-full h-full object-cover" alt="Door to Hell">
+    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, transparent 100%);"></div>
+    <div class="absolute bottom-0 left-0 p-8 text-white">
+      <span class="text-xs font-semibold uppercase tracking-widest text-green-300 bg-green-900/60 px-3 py-1 rounded-full">Must-See</span>
+      <h2 class="text-3xl font-bold mt-2">Door to Hell (Darvaza Crater)</h2>
+      <p class="text-sm text-green-200 mt-1">Darvaza, Ahal Province</p>
+      <p class="text-gray-200 mt-2 max-w-lg text-sm leading-relaxed">A natural gas crater burning since 1971. One of the most surreal sights in the world — best visited at night when the flames glow against the darkness.</p>
     </div>
   </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepgxOSBpRW8TX-uRzxiCkAt07-qh8C6ag2b8jstKtWrCnxbOBUsPrtmY4XUVJB3paUOFsAicNy1jl7v9Nbyf0DGPItp2RLnfU-gE78AU3FdzF9rClu9DqLQxq0F-Mkjkq-tP96M=s680-w680-h510-rw" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Ashgabat</h2>
-      <p>The capital city holds the world record for the highest concentration of white marble buildings. Key sights include the Independence Monument and the Arch of Neutrality.</p>
+  <!-- Rest of places: mixed layout -->
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Wide horizontal card -->
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-xl transition-shadow flex flex-col md:flex-row">
+      <div class="h-48 md:h-auto md:w-48 overflow-hidden flex-shrink-0">
+        <img src="https://central-asia.guide/wp-content/uploads/2023/01/Merv-Turkmenistan-1024x682.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Ancient Merv">
+      </div>
+      <div class="p-5">
+        <p class="text-xs text-green-500 font-semibold uppercase tracking-wide">Mary Province</p>
+        <h3 class="text-xl font-bold text-green-800 mt-1">Ancient Merv</h3>
+        <p class="text-green-600 text-sm mt-2 leading-relaxed">A UNESCO World Heritage Site — once one of the greatest cities of the ancient world and a key stop on the Silk Road.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://central-asia.guide/wp-content/uploads/2023/01/Merv-Turkmenistan-1024x682.jpg" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Ancient Merv</h2>
-      <p>A UNESCO World Heritage site and once one of the largest cities in the world along the Silk Road. Highlights include the Sultan Sanjar Mausoleum and Great Kyz Kala.</p>
+    <!-- Tall vertical card -->
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-xl transition-shadow">
+      <div class="h-52 overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepgxOSBpRW8TX-uRzxiCkAt07-qh8C6ag2b8jstKtWrCnxbOBUsPrtmY4XUVJB3paUOFsAicNy1jl7v9Nbyf0DGPItp2RLnfU-gE78AU3FdzF9rClu9DqLQxq0F-Mkjkq-tP96M=s680-w680-h510-rw"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Ashgabat">
+      </div>
+      <div class="p-5">
+        <p class="text-xs text-green-500 font-semibold uppercase tracking-wide">Capital City</p>
+        <h3 class="text-xl font-bold text-green-800 mt-1">Ashgabat</h3>
+        <p class="text-green-600 text-sm mt-2 leading-relaxed">The world's whitest city — known for its stunning white marble architecture, golden statues, and wide boulevards.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden hover:scale-105 transition">
-    <img src="https://heroesofadventure.com/wp-content/uploads/2019/07/1920x840.jpg" class="h-48 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Yangykala Canyon</h2>
-      <p>Known for its "otherworldly" landscape of pink, red, and yellow rock formations, often described as one of the most beautiful natural spots in the country.</p>
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-xl transition-shadow">
+      <div class="h-52 overflow-hidden">
+        <img src="https://heroesofadventure.com/wp-content/uploads/2019/07/1920x840.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Yangykala Canyon">
+      </div>
+      <div class="p-5">
+        <p class="text-xs text-green-500 font-semibold uppercase tracking-wide">Balkan Province</p>
+        <h3 class="text-xl font-bold text-green-800 mt-1">Yangykala Canyon</h3>
+        <p class="text-green-600 text-sm mt-2 leading-relaxed">A breathtaking canyon of red and pink sandstone cliffs near the Caspian Sea. One of Turkmenistan's most dramatic natural landscapes.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="bg-green-100 rounded-xl overflow-hidden md:col-span-2 hover:scale-105 transition">
-    <img src="https://kalpak-travel.com/wp-content/uploads/2023/03/nisa-turkmenistan-unesco-world-heritage.jpg" class="h-60 w-full object-cover">
-    <div class="p-4">
-      <h2 class="text-xl text-green-800 font-bold">Old Nisa</h2>
-      <p>Located just 15km from Ashgabat, these are the ruins of the ancient capital of the Parthian Empire. A UNESCO site highly recommended to visit with a guide.</p>
+    <div class="rounded-2xl overflow-hidden shadow-md bg-white hover:shadow-xl transition-shadow">
+      <div class="h-52 overflow-hidden">
+        <img src="https://kalpak-travel.com/wp-content/uploads/2023/03/nisa-turkmenistan-unesco-world-heritage.jpg"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Nisa Fortress">
+      </div>
+      <div class="p-5">
+        <p class="text-xs text-green-500 font-semibold uppercase tracking-wide">Near Ashgabat</p>
+        <h3 class="text-xl font-bold text-green-800 mt-1">Nisa Fortress</h3>
+        <p class="text-green-600 text-sm mt-2 leading-relaxed">Ruins of an ancient Parthian capital dating back to the 3rd century BC. A UNESCO-listed site of immense historical significance.</p>
+      </div>
     </div>
   </div>
-</section>
+</div>
 
 </body>
 </html>
